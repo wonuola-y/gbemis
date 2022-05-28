@@ -82,8 +82,8 @@ main{
 }
 
 .first-section{
-    margin: 10px;
-
+    margin: 20px;
+width: 95vw;
 }
 div {
     position: relative;
@@ -231,12 +231,7 @@ i{
           100% { left:0px; top:0px;}
       }
 
-      @keyframes mymove {
-       0%  {  left:0px; top:0px;}
-          25%  { left:50px; top:0px;}
-
-          100% { left:0px; top:0px;}
-      }
+     
 
 .symbol{
     display: flex;
@@ -308,7 +303,7 @@ span {
 
 }
 .four, .five, .six{
-    width: 88%;
+    width: 98%;
     height: 50vh;
     overflow: hidden;
     color: #FFFFFF;
@@ -318,6 +313,7 @@ span {
 }
 .overlay {
     background: rgba(0, 0, 0, 0.393);
+    --webkit-background:rgba(0, 0, 0, 0.393);
     overflow: hidden;
     height: 100%;
     width: 100%;
