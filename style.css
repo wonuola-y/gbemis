@@ -54,7 +54,7 @@ main{
     border-right:3px rgba(255, 0, 255, 0.37) solid;
     -webkit-animation: spin 2s 0.5s linear infinite;
     animation: spin 2s 2s linear infinite;
-    animation: spin 1s linear 2.5s infinite;
+    animation: spin 1s linear 2s infinite;
 }
 .circle-three{
 
