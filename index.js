@@ -28,7 +28,7 @@ const main = document.querySelector('main')
 let loading;
 
 function myFunction() {
-    loading = setTimeout(showPage, 3000);
+    loading = setTimeout(showPage, 4000);
     body.style.backgroundColor = ""
 }
   
@@ -49,11 +49,15 @@ cancel.addEventListener("click", () =>{
 console.log('bye');
 sidenav.style.display = "none";
 body.style.backgroundColor = "#ffff";
+body.style.zIndex = "1";
 
 })
 
 btn.onmouseenter = function () {
-    symbol.addEventListener("mouseenter",  symbol.classList.add('hovered'));
+console.log(46/21)
+    console.log('fishy');
+    symbol.addEventListener("mouseenter", symbol.classList.add('hovered'));
+
     setTimeout(function() {
         symbol.classList.remove('hovered');
       }.bind(symbol), 1000)
@@ -150,24 +154,4 @@ document.addEventListener('DOMContentLoaded',function(event){
     // start the text animation
     StartTextAnimation(0);
   });
-//   const boxes = document.getElementsByTagName("i");
 
-// window.addEventListener("scroll", checkBoxes);
-
-// checkBoxes();
-
-// function checkBoxes() {
-// console.log('hey');
-//   const triggerBottom = (window.innerHeight / 5) * 4;
-
-//   boxes.forEach((box) => {
-//     const boxTop = box.getBoundingClientRect().top;
-
-//     if (boxTop < triggerBottom) {
-//       box.classList.add("show");
-//     } else {
-//       box.classList.remove("show");
-    
-// }
-//   });
-// }
