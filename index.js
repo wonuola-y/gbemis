@@ -28,7 +28,7 @@ const main = document.querySelector('main')
 let loading;
 
 function myFunction() {
-    loading = setTimeout(showPage, 4000);
+    loading = setTimeout(showPage, 3000);
     body.style.backgroundColor = ""
 }
   
