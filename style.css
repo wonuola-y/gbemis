@@ -388,10 +388,7 @@ h2{
 
 
 }
-.i:hover{
-    background-color: #FFFFFF;
-    color: black;
-}
+
 @keyframes hmm {
     0% {transform: rotate(100deg);}
     100% {transform: rotate(360deg);}
