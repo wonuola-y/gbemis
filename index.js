@@ -1,4 +1,4 @@
-const load = document.getElementById('loader')
+const load = document.querySelector('.button')
 const project = document.getElementById('projects-two')
 const dart = document.getElementById('projects-three')
 const second = document.getElementById('second-loader')
