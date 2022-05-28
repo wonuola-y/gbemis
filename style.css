@@ -122,6 +122,7 @@ div {
 .first-text{
     font-style: italic;
     margin: 0;
+    padding: 12px 0;
     font-size: 16px;
 }
 nav{
@@ -186,29 +187,36 @@ i{
     font-style: normal;
 }
 .btn-one{
-    margin: 20px 0px;
-    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+    padding: 14px 18px;
     background-color: #FFFFFF;
     color: rgba(62, 19, 62, 0.973);
     border: 1px solid rgba(62, 19, 62, 0.973);
     border-radius: 5px;
 }
+
 .btn-one:hover{
     color: white;
     background-color: rgba(62, 19, 62, 0.973);
-    transition: 0.5s;
-    width: 10vw;
+    transition: 0.5s ease-in;
+    /* width: 10vw; */
 }
 .hovered{
     /* background:#000 !important;
     color:#fff !important; */
-    border: 2px solid white;
+    position: relative;
     -webkit-animation-name: wait;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 0.5s;
     animation-name: wait !important;
-    animation-duration: 2s !important;
+    animation-duration: 0.5s !important;
+    animation-timing-function: linear;
+    transition: ease-out;
 
 }
+
+
 @keyframes wait {
     0%  {  left:0px; top:0px;}
     25%  { left:50px; top:0px;}
@@ -216,7 +224,7 @@ i{
     100% { left:0px; top:0px;}
 }
 
-    @-webkit-keyframes mymove {
+    @-webkit-keyframes wait {
         0%  {  left:0px; top:0px;}
           25%  { left:50px; top:0px;}
 
@@ -230,8 +238,15 @@ i{
           100% { left:0px; top:0px;}
       }
 
+.symbol{
+    display: flex;
+    margin: 0 10px;
+    width: 30px;
+  
+}
 .introduction{
-    font-size: 3.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
     color: rgba(62, 19, 62, 0.973);
     margin: 0;
     padding: 0;
@@ -263,9 +278,11 @@ span {
     width: 30vw;
     display: flex;
     justify-content: center;
+    vertical-align: top;
 }
+
 .image{
-    width: 60vw;
+    width: 70vw;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -291,6 +308,7 @@ span {
 
 }
 .four, .five, .six{
+    width: 98%;
     height: 50vh;
     overflow: hidden;
     color: #FFFFFF;
@@ -299,9 +317,10 @@ span {
 
 }
 .overlay {
-    background: rgba(36, 51, 58, 0.7);
+    background: rgba(0, 0, 0, 0.393);
     overflow: hidden;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 
@@ -326,7 +345,7 @@ h4{
 
 }
 .img{
-    width: 100vw;
+    width: 100%;
     border-radius: 10px;
 }
 .projects-one, .projects-two, .projects-three{
@@ -367,7 +386,9 @@ h2{
 
 
 
-.button{  width: 100vw;
+.button{  position: relative;
+    z-index: 1;
+    width: 100vw;
     font-weight: 700;
     font-size: 25px;
     text-align: center;
@@ -378,15 +399,12 @@ h2{
 }
 
 .i{
-
     font-style: normal;
     background-color: rgba(177, 15, 227, 0.502);
     border-radius: 15px;
     padding: 15px;
     margin: 10px;
     color: #FFFFFf;
-
-
 }
 
 @keyframes hmm {
