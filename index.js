@@ -76,16 +76,14 @@ second.addEventListener("click", () =>{
     console.log('gbems'); 
     dart.style.display = "block";
     second.style.display = "none";
-    third.style.display = "block";
-   
-         
+    third.style.display = "block";     
 });
+
 third.addEventListener("click", () =>{
     console.log('tells'); 
     dart.style.display = "block";
     third.style.display = "none";
     text.style.display = "block";
-         
 });
 
 
@@ -95,9 +93,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slides");
@@ -107,10 +102,7 @@ function showSlides(n) {
     slides[i].style.display = "none";  
   }
   slides[slideIndex-1].style.display = "block";  
-  
-
 }
-
 
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
